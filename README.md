@@ -338,13 +338,13 @@ In this example, the data will be read and stored in Google Pub/Sub, as shown in
 
 
 
-## Design
-The Design problem is described at [https://github.com/GeorgeDaoud3/SOFE4630U-Design](https://github.com/GeorgeDaoud3/SOFE4630U-Design). You already have implemented the ingestion and storage in the first two milestones. In this milestone, we will start in the processing part. You are required to implement the <a href='https://github.com/GeorgeDaoud3/SOFE4630U-Design/blob/main/README.md#milestone-3'> milestone 3</a> part and run it a Dataflow job.
- 
-## Deliverables
-1. A report including the four Dataflow examples (wordcount and MNIST) and a description of the implementation of the design part. It should include proof of a successful deployment of the dataflow Job and provide some results.
-2. An audible video of about 4 minutes showing the created job and the results of the four examples (wordcount and MNIST).
-3. Another audible video of about 3 minutes showing the design part.
-4. A GitHub link of the code, Dockerfile, and results of the design part.
+## Design: 
+Although Google Pub/Sub doesn't support connectors, it can be implemented using Data flow or any other processing service. Update the Dataflow pipeline you implemented in the second milestone to include a parallel branch that saves the preprocessed records into a MySQL server deployed on GKE.
 
-**Note**: you will represent the Design part of this milestone in the lecture.
+You may find [this package](http://mohaseeb.com/beam-nuggets/beam_nuggets.html) helpful
+
+# Deliverables
+1. A report that includes the Discussion part and description of the updated pipeline.
+2. The code you implemented in the Design part.
+2. An audible video of about 5 minutes showing the connectors described. Your video should highlight the check steps.
+3. Another audible video of about 3 minutes shows the output of the design part.
