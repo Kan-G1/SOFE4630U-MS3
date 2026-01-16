@@ -1,7 +1,7 @@
 # Milestone 3: Data Processing Service (Dataflow)
 
 ##  Repository: 
-[https://github.com/GeorgeDaoud3/SOFE4630U-MS3.git](https://github.com/GeorgeDaoud3/SOFE4630U-MS3.git)
+[https://github.com/MohammadYasserZaki/SOFE4630U-MS3](https://github.com/MohammadYasserZaki/SOFE4630U-MS3)
 
 ## Objective:
 1. Get familiar with Dataflow.
@@ -348,3 +348,6 @@ You may find [this package](http://mohaseeb.com/beam-nuggets/beam_nuggets.html) 
 2. The code you implemented in the Design part.
 2. An audible video of about 5 minutes showing the connectors described. Your video should highlight the check steps.
 3. Another audible video of about 3 minutes shows the output of the design part.
+
+## Acknowledgements
+This repository is a fork of [GeorgeDaoud3/SOFE4630U-MS3](https://github.com/GeorgeDaoud3/SOFE4630U-MS3) . Credit to the original author for the initial implementation.
