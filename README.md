@@ -339,14 +339,22 @@ In this example, the data will be read and stored in Google Pub/Sub, as shown in
 
 
 ## Design: 
-Although Google Pub/Sub doesn't support connectors, it can be implemented using Data flow or any other processing service. Update the Dataflow pipeline you implemented in the second milestone to include a parallel branch that saves the preprocessed records into a MySQL server deployed on GKE.
-
-You may find [this package](http://mohaseeb.com/beam-nuggets/beam_nuggets.html) helpful
+In the previous milestone, you have sent data to Google Pub/Sub and saved it. It's needed to add a Dataflow job to preprocess the smart meter measurements [Check Design folder for Lables.csv]. The job consists of the following stages
+1. **Read from PubSub**: read the measurement reading .
+2. **Filter**: Eliminate records with missing measurements (containing None). 
+3. **Convert**:  convert  the  pressure  from  kPa  to  psi  and  the  temperature  from  Celsius  to  Fahrenheit using the following equations 
+    
+    𝑃(𝑝𝑠𝑖) = 𝑃(𝑘𝑃𝑎)/6.895
+    
+    𝑇(𝐹) = 𝑇(𝐶)∗1.8+32
+4. **Write to PubSub**: send the measurement back to another topic
 
 ## Deliverables
-1. A report that includes the discription of the second wordcount example (**wordcount2.py**) and the pipeline you used in the Design section. It should have snapshots of the job and results of the four examples (wordcount and mnist) as well as the design part.
-2. An audible video of about 4 minutes showing the created job and the results of the four examples (wordcount and mnist).
-3. Another audible video of about 3 minutes showing the design part.
+A report that includes the following:
+1. A GitHub link to the scripts used in the Design part.
+2. the discussion and the design parts.
+3. A Link to an audible video of about 4 minuets showing the created job and the results of the four examples (wordcount and mnist).
+4. A Link to another audible video of about 5 minutes showing the design part. 
 
 ## Acknowledgements
 This repository is a fork of [GeorgeDaoud3/SOFE4630U-MS3](https://github.com/GeorgeDaoud3/SOFE4630U-MS3) . Credit to the original author for the initial implementation.
