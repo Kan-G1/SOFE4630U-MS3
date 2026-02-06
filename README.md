@@ -352,7 +352,7 @@ In the previous milestone, you have sent data to Google Pub/Sub and saved it. It
 ## Deliverables
 A report that includes the following:
 1. A GitHub link to the scripts used in the Design part.
-2. a small written of the steps taken to produce the design part.
+2. a small written explanation of the steps taken to produce the design part.
 3. A Link to an audible video of about 4 minuets showing the created job and the results of the four examples (wordcount and mnist).
 4. A Link to another audible video of about 5 minutes showing the design part. 
 
