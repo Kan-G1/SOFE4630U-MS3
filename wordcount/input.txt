@@ -1,0 +1,12 @@
+Hello world
+This is a test file for word count
+Dataflow is great
+Hello Dataflow
+Winter is coming
+The quick brown fox jumps over the lazy dog
+cloud computing milestone
+dataflow runner
+apache beam python
+start with letters a b c d e f
+apple banana cat dog elephant fish
+zebra xray yak
