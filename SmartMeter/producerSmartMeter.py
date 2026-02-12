@@ -16,10 +16,12 @@ from google.cloud import pubsub_v1  # pip install google-cloud-pubsub
 
 # Auto-detect service account key in current directory
 files = glob.glob("*.json")
+if not files:
+    raise Exception("No Service Account JSON key found in this directory.")
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = files[0]
 
 # TODO: fill in your GCP project ID
-project_id = ""
+project_id = "cloudcomputing-milestone1"
 topic_id = "smartmeter_input"
 
 publisher = pubsub_v1.PublisherClient()
